@@ -10,11 +10,11 @@ This project's is from a fictional pizza restaurant chain.
 The data contains 12 columns and 48620 rows:
 | Column            | Description                                   | Data Type        |
 |-------------------|-----------------------------------------------|------------------|
-| Pizza_ID          | Invoice of the sales made                     | VARCHAR(30)      |
-| Order_ID          | Branch at which sales were made               | VARCHAR(30)      |
-| Pizza_Name_ID     | The location of the branch                    | VARCHAR(30)      |
+| Pizza_ID          | Unique identifier for each pizza sold         | VARCHAR(30)      |
+| Order_ID          | Unique identifier for each order              | VARCHAR(30)      |
+| Pizza_Name_ID     | Unique identifier for each pizza name         | VARCHAR(30)      |
 | Pizza_Name        | The name of pizza                             | VARCHAR(30)      |
-| Quantity          | The quantity of pizza                         | INT              |
+| Quantity          | The quantity of pizza ordered                 | INT              |
 | Order_Date        | The date on which the order was made          | DATETIME         |
 | Order_Time        | The time at which the order was made          | TIME             |
 | Unit_Price        | The price of each pizza                       | DECIMAL(10, 2)   |
