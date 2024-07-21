@@ -102,29 +102,80 @@ The data shows that a large number of pizzas have been sold across a considerabl
 These trends indicate that weekends, particularly Fridays and Saturdays, are the peak times for orders, while Sundays and Mondays are slower. In terms of months, mid-year periods see higher order volumes.
 
 ***4.	Pizza Categories and Sizes***
+- Top Pizza Categories by Revenue:
+   - Classic (26.91%)
+   - Supreme (25.46%)
+   - Chicken (23.96%)
+   - Veggie (23.68%)
+- Top Pizza Sizes by Revenue:
+   - Large (45.89%)
+   - Medium (30.49%)
+   - Small (21.77%)
 
+Classic and Supreme categories dominate sales, contributing nearly half of the total revenue. In terms of size, Large pizzas are the most popular, accounting for almost half of the sales, followed by Medium and Small sizes.
 
 ***5.	Top and Bottom Performing Pizzas***
-
+- Top 5 Pizzas by Revenue:
+   - The Thai Chicken Pizza: $43,434.25
+   - The Barbecue Chicken Pizza: $42,768.00
+   - The California Chicken Pizza: $41,409.50
+   - The Classic Deluxe Pizza: $38,180.50
+   - The Spicy Italian Pizza: $34,831.25
+- Bottom 5 Pizzas by Revenue:
+   - The Brie Carre Pizza: $11,588.50
+   - The Green Garden Pizza: $13,955.75
+   - The Spinach Supreme Pizza: $15,277.75
+   - The Mediterranean Pizza: $15,360.50
+   - The Spinach Pesto Pizza: $15,596.00
 
 ***6.	Top and Bottom Performing Pizzas by Quantity and Orders***
+- Top 5 Pizzas by Quantity:
+   - The Classic Deluxe Pizza: 2,453
+   - The Barbecue Chicken Pizza: 2,432
+   - The Hawaiian Pizza: 2,422
+   - The Pepperoni Pizza: 2,418
+   - The Thai Chicken Pizza: 2,371
+- Bottom 5 Pizzas by Quantity:
+   - The Brie Carre Pizza: 490
+   - The Mediterranean Pizza: 934
+   - The Calabrese Pizza: 937
+   - The Spinach Supreme Pizza: 950
+   - The Soppressata Pizza: 961
+- Top 5 Pizzas by Total Orders:
+   - The Classic Deluxe Pizza: 2,329
+   - The Hawaiian Pizza: 2,280
+   - The Pepperoni Pizza: 2,278
+   - The Barbecue Chicken Pizza: 2,273
+   - The Thai Chicken Pizza: 2,225
+- Bottom 5 Pizzas by Total Orders:
+   - The Brie Carre Pizza: 480
+   - The Mediterranean Pizza: 912
+   - The Spinach Supreme Pizza: 918
+   - The Calabrese Pizza: 918
+   - The Chicken Pesto Pizza: 938
 
+The Thai Chicken Pizza, Barbecue Chicken Pizza, and California Chicken Pizza are among the top revenue generators, while The Brie Carre Pizza and The Green Garden Pizza are among the lowest.
 
 ## Recommendationss
 ***1.	Promote High-Performing Pizzas***
-
+- Increase marketing efforts for top-performing pizzas like The Thai Chicken Pizza, The Barbecue Chicken Pizza, and The California Chicken Pizza to boost sales further.
+- Consider creating combo deals or discounts for these popular items to encourage more purchases.
 
 ***2.	Revise or Discontinue Low-Performing Pizzas***
-
+- Evaluate the bottom-performing pizzas such as The Brie Carre Pizza and The Green Garden Pizza. Consider revising their recipes, changing their marketing strategies, or even discontinuing them if they continue to underperform
 
 ***3.	Optimize Inventory for Popular Sizes***
-
+- Given that Large and Medium pizzas generate the most revenue, ensure that inventory levels for these sizes are adequately stocked, especially during peak days and months.
 
 ***4.	Target Marketing for Peak Days and Months***
-
+- Focus promotional campaigns around Fridays and Saturdays, as well as the high-order months of July, May, and January.
+- Consider special offers or events during slower days (Sundays and Mondays) and months (October and September) to balance the sales distribution.
 
 ***5.	Enhance Customer Experience***
+- Since customers order an average of 2.32 pizzas per order, introduce family or group meal deals to cater to this buying pattern.
+- Improve delivery times and customer service during peak hours and days to enhance customer satisfaction.
 
 
 ***6.	Seasonal and Limited-Time Offers***
+- Introduce seasonal pizzas or limited-time offers to create excitement and drive sales during off-peak periods.
 
