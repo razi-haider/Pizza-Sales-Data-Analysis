@@ -1,3 +1,5 @@
+![Sample Image](https://github.com/razi-haider/Pizza-Sales-Data-Analysis--SQL-Project/blob/main/pizza.jpg)
+
 # Pizza-Sales-Data-Analysis--SQL-Project
 ## About
 We are analysing Pizza sales data to identify most selling pizza category and highly revenue generated pizza, analyze the daily and monthly trends of ordersand understand customer behavior. The primary objective is to enhance and optimize sales strategies. The dataset utilized in this project is  from a fictional pizza restaurant chain.
@@ -6,7 +8,7 @@ We are analysing Pizza sales data to identify most selling pizza category and hi
 The main goal of this project is to provide insights and actionable information to help the pizza restaurant chain optimize its operations, improve sales, and enhance customer satisfaction.
 
 ## About Data
-This project's is from a fictional pizza restaurant chain.
+This project's data is from a fictional pizza restaurant chain.
 The data contains 12 columns and 48620 rows:
 | Column            | Description                                   | Data Type        |
 |-------------------|-----------------------------------------------|------------------|
