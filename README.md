@@ -1,181 +1,147 @@
 ![Sample Image](https://github.com/razi-haider/Pizza-Sales-Data-Analysis--SQL-Project/blob/main/pizza.jpg)
 
-# Pizza-Sales-Data-Analysis--SQL-Project
-## About
-We are analysing Pizza sales data to identify most selling pizza category and highly revenue generated pizza, analyze the daily and monthly trends of ordersand understand customer behavior. The primary objective is to enhance and optimize sales strategies. The dataset utilized in this project is  from a fictional pizza restaurant chain.
+# Pizza Sales Data Analysis -- SQL Project
 
-## Purposes of the Project
-The main goal of this project is to provide insights and actionable information to help the pizza restaurant chain optimize its operations, improve sales, and enhance customer satisfaction.
+## Project by: Razi Haider
 
-## About Data
-This project's data is from a fictional pizza restaurant chain.
-The data contains 12 columns and 48620 rows:
-| Column            | Description                                   | Data Type        |
-|-------------------|-----------------------------------------------|------------------|
-| Pizza_ID          | Unique identifier for each pizza sold         | VARCHAR(30)      |
-| Order_ID          | Unique identifier for each order              | VARCHAR(30)      |
-| Pizza_Name_ID     | Unique identifier for each pizza name         | VARCHAR(30)      |
-| Pizza_Name        | The name of pizza                             | VARCHAR(30)      |
-| Quantity          | The quantity of pizza ordered                 | INT              |
-| Order_Date        | The date on which the order was made          | DATETIME         |
-| Order_Time        | The time at which the order was made          | TIME             |
-| Unit_Price        | The price of each pizza                       | DECIMAL(10, 2)   |
-| Total_Price       | The total cost of the order                   | DECIMAL(12, 4)   |
-| Pizza_Size        | The size of pizza                             | VARCHAR(5)       |
-| Pizza_Category    | The category of pizza                         | VARCHAR(30)      |
-| Pizza_Ingredients | The ingredients of pizza                      | VARCHAR(30)      |
+### Executive Summary
+This project analyzes pizza sales data to identify the most popular pizza categories, the highest revenue-generating pizzas, and understand daily and monthly order trends. The primary objective is to enhance and optimize sales strategies for a fictional pizza restaurant chain. Key findings indicate that Fridays and Saturdays are peak days for orders, with July being the busiest month. Classic and Supreme pizzas are the top-performing categories, while large pizzas are the most popular size.
 
+### Table of Contents
+- [About the Project](#about-the-project)
+- [Data Description](#data-description)
+- [Purpose of the Project](#purpose-of-the-project)
+- [Methodology](#methodology)
+- [Business Questions and Insights](#business-questions-and-insights)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
+- [Conclusion](#conclusion)
 
-## Analysis List:
+### About the Project
+We analyze pizza sales data to identify the most popular pizza categories, the highest revenue-generating pizzas, and to understand daily and monthly order trends. The primary objective is to enhance and optimize sales strategies for a fictional pizza restaurant chain.
 
-1.	Product Analysis
+### Data Description
+The dataset contains 12 columns and 48,620 rows:
 
-> Perform an analysis on the data to gain insights into different pizza categories and sizes, determine the top-performing pizzas, and identify areas for improvement.
+| Column          | Description                          | Data Type      |
+|-----------------|--------------------------------------|----------------|
+| Pizza ID        | Unique identifier for each pizza sold| VARCHAR(30)    |
+| Order ID        | Unique identifier for each order     | VARCHAR(30)    |
+| Pizza Name ID   | Unique identifier for each pizza name| VARCHAR(30)    |
+| Pizza Name      | The name of the pizza                | VARCHAR(30)    |
+| Quantity        | The quantity of pizza ordered        | INT            |
+| Order Date      | The date on which the order was made | DATETIME       |
+| Order Time      | The time at which the order was made | TIME           |
+| Unit Price      | The price of each pizza              | DECIMAL(10, 2) |
+| Total Price     | The total cost of the order          | DECIMAL(12, 4) |
+| Pizza Size      | The size of the pizza                | VARCHAR(5)     |
+| Pizza Category  | The category of the pizza            | VARCHAR(30)    |
+| Pizza Ingredients | The ingredients of the pizza       | VARCHAR(30)    |
 
-2.	Sales Analysis
+### Purpose of the Project
+The main goal is to provide insights and actionable information to help the pizza restaurant chain:
+- Optimize operations
+- Improve sales
+- Enhance customer satisfaction
+
+### Methodology
+1. **Data Wrangling**
+   - Examined the data for NULL or missing values.
+   - Implemented strategies for data replacement.
    
-> The objective of this analysis is to address the inquiry regarding the sales trends of pizzas. The outcomes of this analysis can assist in evaluating the efficiency of each applied sales strategy in the business and determining necessary modifications to increase sales.
+2. **Build a Database**
+   - Created a table and inserted the data.
+   - Ensured that NULL values were filtered out by specifying NOT NULL constraints during table creation.
+   
+3. **Feature Engineering**
+   - Added a new column `Order-Day` to extract the day of the week from the `Order Date`.
+   - Added a new column `Month Name` to extract the month from the `Order Date`.
+   
+4. **Exploratory Data Analysis (EDA)**
+   - Conducted EDA to answer key business questions and achieve project objectives.
 
+### Business Questions and Insights
+#### Product Analysis
+- **Total Revenue**: $817,860.05
+- **Total Orders Placed**: 21,350
+- **Average Order Value**: $38.31
+- **Average Pizzas per Order**: 2.32
 
-## Approach Used
-***1.	Data Wrangling***
-During this initial phase, the data is examined to detect any NULL or missing values, and strategies for data replacement are implemented to address and substitute these values effectively.
-- Build a database
-- Create a table and insert the data.
-- Select columns with null values in them. Null values are not present in our database because, in creating the tables, NOT NULL was specified for each field, effectively filtering out any null values.
+**Top 5 Pizzas by Revenue**
+1. Thai Chicken Pizza: $43,434.25
+2. Barbecue Chicken Pizza: $42,768.00
+3. California Chicken Pizza: $41,409.50
+4. Classic Deluxe Pizza: $38,180.50
+5. Spicy Italian Pizza: $34,831.25
 
-***2.	Feature Enginerring***
-This will help us generate some new columns from existing ones.
-- Add a new column named Order-Day that contains the extracted days of the week on which the order took place (Monday, Tuesday, etc). This will help answer the question of which day of the week has the most sales and profit.
-- Add a new column named Month_Name that contains the extracted months of the year on which the order took place (January, Febuary, etc). This will help determine which month of the year has the most sales and profit.
+**Bottom 5 Pizzas by Revenue**
+1. Brie Carre Pizza: $11,588.50
+2. Green Garden Pizza: $13,955.75
+3. Spinach Supreme Pizza: $15,277.75
+4. Mediterranean Pizza: $15,360.50
+5. Spinach Pesto Pizza: $15,596.00
 
-***3.  Exploratory Data Analysis (EDA)***
-Conducting exploratory data analysis is essential to address the project's listed questions and objectives.
+**Top 5 Pizzas by Quantity**
+1. Classic Deluxe Pizza: 2,453
+2. Barbecue Chicken Pizza: 2,432
+3. Hawaiian Pizza: 2,422
+4. Pepperoni Pizza: 2,418
+5. Thai Chicken Pizza: 2,371
 
-## Business Questions to Answer
+**Bottom 5 Pizzas by Quantity**
+1. Brie Carre Pizza: 490
+2. Mediterranean Pizza: 934
+3. Calabrese Pizza: 937
+4. Spinach Supreme Pizza: 950
+5. Soppressata Pizza: 961
 
-### Generic Questions
-- View the data	
+**Percentage of Sales by Pizza Category**
+- Classic: 26.91%
+- Supreme: 25.46%
+- Chicken: 23.96%
+- Veggie: 23.68%
 
-### Product Analysis
-- What is the total revenue?
-- What is the total pizza sold?
-- What is the total number of orders placed?
-- What is the average order value?
-- What is the average pizza per order?
-- What is the percentage of sales by pizza category?
-- What is the percentage of sales by pizza size?
-- What is the total pizzas sold by pizza category?
-- What are the top 5 pizzas by revenue?
-- What are the bottom 5 pizzas by revenue?
-- What are the top 5 pizzas by quantity?
-- What are the bottom 5 pizzas by quantity?
-- What are the top 5 pizzas by total orders?
-- What are the bottom 5 pizzas by total orders?
+**Percentage of Sales by Pizza Size**
+- Large: 45.89%
+- Medium: 30.49%
+- Small: 21.77%
 
-### Sales Analysis
-- What are the daily trends for total orders?
-- What are the monthly trends for total orders?
+**Daily Trends**
+- Highest orders: Friday (3,538), Saturday (3,158), Thursday (3,239)
+- Lowest orders: Sunday (2,624), Monday (2,794)
 
-## Insights
-***1.	Total Revenue and Average Order Value***
-- Total Revenue: $817,860.05
-- Average Order Value: $38.31
+**Monthly Trends**
+- Highest orders: July (1,935), May (1,853), January (1,845)
+- Lowest orders: October (1,646), September (1,661)
 
-The total revenue generated by the pizza sales is substantial, indicating a healthy demand for the products. The average order value of $38.31 suggests customers are willing to spend a significant amount per order
+### Recommendations
+1. **Promote High-Performing Pizzas**
+   - Increase marketing efforts for top-performing pizzas like The Thai Chicken Pizza, The Barbecue Chicken Pizza, and The California Chicken Pizza.
+   - Consider creating combo deals or discounts for these popular items.
+   
+2. **Revise or Discontinue Low-Performing Pizzas**
+   - Evaluate the bottom-performing pizzas such as The Brie Carre Pizza and The Green Garden Pizza.
+   - Consider revising their recipes, changing their marketing strategies, or discontinuing them if they continue to underperform.
+   
+3. **Optimize Inventory for Popular Sizes**
+   - Focus promotional campaigns around Fridays and Saturdays, as well as the high-order months of July, May, and January.
+   - Consider special offers or events during slower days (Sundays and Mondays) and months (October and September) to balance the sales distribution.
+   
+4. **Target Marketing for Peak Days and Months**
+   - Focus promotions on peak days and months.
+   - Offer special deals during slower periods.
+   
+5. **Enhance Customer Experience**
+   - Since customers order an average of 2.32 pizzas per order, introduce family or group meal deals to cater to this buying pattern.
+   - Improve delivery times and customer service during peak hours and days to enhance customer satisfaction.
+   
+6. **Seasonal and Limited-Time Offers**
+   - Introduce seasonal pizzas or limited-time offers to create excitement and drive sales during off-peak periods.
 
-***2.	Sales Volume***
-- Total Pizzas Sold: 49,574
-- Total Orders: 21,350
-- Average Pizzas per Order: 2.32
+### Limitations
+- The dataset is limited to a specific time period, which may not capture seasonal or long-term trends.
+- The analysis assumes that the provided data is complete and accurate.
+- External factors such as marketing campaigns, local events, or economic conditions are not considered in this analysis.
 
-The data shows that a large number of pizzas have been sold across a considerable number of orders, with an average of approximately 2.32 pizzas per order.
-
-***3.	Daily and Monthly Trends***
-- Daily Trends:
-   - The highest number of orders were placed on Friday (3,538), followed by Saturday (3,158) and Thursday (3,239).
-   - The least number of orders were placed on Sunday (2,624) and Monday (2,794).
-- Monthly Trends:
-   - The highest number of orders were placed in July (1,935), followed by May (1,853) and January (1,845).
-   - The least number of orders were placed in October (1,646) and September (1,661).
-
-These trends indicate that weekends, particularly Fridays and Saturdays, are the peak times for orders, while Sundays and Mondays are slower. In terms of months, mid-year periods see higher order volumes.
-
-***4.	Pizza Categories and Sizes***
-- Top Pizza Categories by Revenue:
-   - Classic (26.91%)
-   - Supreme (25.46%)
-   - Chicken (23.96%)
-   - Veggie (23.68%)
-- Top Pizza Sizes by Revenue:
-   - Large (45.89%)
-   - Medium (30.49%)
-   - Small (21.77%)
-
-Classic and Supreme categories dominate sales, contributing nearly half of the total revenue. In terms of size, Large pizzas are the most popular, accounting for almost half of the sales, followed by Medium and Small sizes.
-
-***5.	Top and Bottom Performing Pizzas***
-- Top 5 Pizzas by Revenue:
-   - The Thai Chicken Pizza: $43,434.25
-   - The Barbecue Chicken Pizza: $42,768.00
-   - The California Chicken Pizza: $41,409.50
-   - The Classic Deluxe Pizza: $38,180.50
-   - The Spicy Italian Pizza: $34,831.25
-- Bottom 5 Pizzas by Revenue:
-   - The Brie Carre Pizza: $11,588.50
-   - The Green Garden Pizza: $13,955.75
-   - The Spinach Supreme Pizza: $15,277.75
-   - The Mediterranean Pizza: $15,360.50
-   - The Spinach Pesto Pizza: $15,596.00
-
-***6.	Top and Bottom Performing Pizzas by Quantity and Orders***
-- Top 5 Pizzas by Quantity:
-   - The Classic Deluxe Pizza: 2,453
-   - The Barbecue Chicken Pizza: 2,432
-   - The Hawaiian Pizza: 2,422
-   - The Pepperoni Pizza: 2,418
-   - The Thai Chicken Pizza: 2,371
-- Bottom 5 Pizzas by Quantity:
-   - The Brie Carre Pizza: 490
-   - The Mediterranean Pizza: 934
-   - The Calabrese Pizza: 937
-   - The Spinach Supreme Pizza: 950
-   - The Soppressata Pizza: 961
-- Top 5 Pizzas by Total Orders:
-   - The Classic Deluxe Pizza: 2,329
-   - The Hawaiian Pizza: 2,280
-   - The Pepperoni Pizza: 2,278
-   - The Barbecue Chicken Pizza: 2,273
-   - The Thai Chicken Pizza: 2,225
-- Bottom 5 Pizzas by Total Orders:
-   - The Brie Carre Pizza: 480
-   - The Mediterranean Pizza: 912
-   - The Spinach Supreme Pizza: 918
-   - The Calabrese Pizza: 918
-   - The Chicken Pesto Pizza: 938
-
-The Thai Chicken Pizza, Barbecue Chicken Pizza, and California Chicken Pizza are among the top revenue generators, while The Brie Carre Pizza and The Green Garden Pizza are among the lowest.
-
-## Recommendationss
-***1.	Promote High-Performing Pizzas***
-- Increase marketing efforts for top-performing pizzas like The Thai Chicken Pizza, The Barbecue Chicken Pizza, and The California Chicken Pizza to boost sales further.
-- Consider creating combo deals or discounts for these popular items to encourage more purchases.
-
-***2.	Revise or Discontinue Low-Performing Pizzas***
-- Evaluate the bottom-performing pizzas such as The Brie Carre Pizza and The Green Garden Pizza. Consider revising their recipes, changing their marketing strategies, or even discontinuing them if they continue to underperform
-
-***3.	Optimize Inventory for Popular Sizes***
-- Given that Large and Medium pizzas generate the most revenue, ensure that inventory levels for these sizes are adequately stocked, especially during peak days and months.
-
-***4.	Target Marketing for Peak Days and Months***
-- Focus promotional campaigns around Fridays and Saturdays, as well as the high-order months of July, May, and January.
-- Consider special offers or events during slower days (Sundays and Mondays) and months (October and September) to balance the sales distribution.
-
-***5.	Enhance Customer Experience***
-- Since customers order an average of 2.32 pizzas per order, introduce family or group meal deals to cater to this buying pattern.
-- Improve delivery times and customer service during peak hours and days to enhance customer satisfaction.
-
-
-***6.	Seasonal and Limited-Time Offers***
-- Introduce seasonal pizzas or limited-time offers to create excitement and drive sales during off-peak periods.
-
+### Conclusion
+The analysis reveals valuable insights into the pizza sales patterns, customer preferences, and product performance. Classic and Supreme pizzas, particularly in large sizes, are the most popular. Fridays and Saturdays see the highest number of orders, with July being the peak month. These insights can help the pizza restaurant chain optimize inventory, staffing, and marketing strategies to enhance customer satisfaction and boost sales.
