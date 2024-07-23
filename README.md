@@ -96,21 +96,25 @@ The main goal is to provide insights and actionable information to help the pizz
 5. Soppressata Pizza: 961
 
 **Percentage of Sales by Pizza Category**
+![Sample Image](https://github.com/razi-haider/Pizza-Sales-Data-Analysis--SQL-Project/blob/main/Percentage%20of%20Sales%20by%20Category.png)
 - Classic: 26.91%
 - Supreme: 25.46%
 - Chicken: 23.96%
 - Veggie: 23.68%
 
 **Percentage of Sales by Pizza Size**
+![Sample Image](https://github.com/razi-haider/Pizza-Sales-Data-Analysis--SQL-Project/blob/main/Sales%20of%20Pizza%20by%20Size.png)
 - Large: 45.89%
 - Medium: 30.49%
 - Small: 21.77%
 
 **Daily Trends**
+![Sample Image](https://github.com/razi-haider/Pizza-Sales-Data-Analysis--SQL-Project/blob/main/Daily%20Trends%20for%20Order.png)
 - Highest orders: Friday (3,538), Saturday (3,158), Thursday (3,239)
 - Lowest orders: Sunday (2,624), Monday (2,794)
 
 **Monthly Trends**
+![Sample Image](https://github.com/razi-haider/Pizza-Sales-Data-Analysis--SQL-Project/blob/main/Monthly%20Trends%20for%20Orders.png)
 - Highest orders: July (1,935), May (1,853), January (1,845)
 - Lowest orders: October (1,646), September (1,661)
 
